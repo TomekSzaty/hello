@@ -1,22 +1,22 @@
 
 import './App.css';
+import Employee from './components/Employee';
 
 function App() {
+  console.log("We are about to list the empoyees");
+  const showEmployees = true; //or false
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello React ;)
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {console.log("From inside the return")}
+      {showEmployees ? (
+        <>
+          <Employee />
+          <Employee />
+          <Employee />
+        </>
+        ) : (
+          <p>You can't see the list of employees</p>
+            )}
     </div>
   );
 }
