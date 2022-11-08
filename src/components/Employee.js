@@ -9,13 +9,6 @@ function Employee(props) {
     <p>
         {props.role ? props.role : "No role."}
     </p>
-
-    
-        {props.role ? (
-        <p class="role">{props.role}</p> // different way to write the same thing
-        ) : (
-        <p class="norole">No role.</p>
-        )}
     
     </>
     )
