@@ -4,7 +4,7 @@ import Employee from './components/Employee';
 import { useState } from 'react';
 
 function App() {
-  const [role, setRole] = useState("Dev")
+  const [role, setRole] = useState("JavaJDev")
   const showEmployees = true; //or false
   return (
     <div className="App">
@@ -19,7 +19,8 @@ function App() {
 
           <Employee name="Tom" role="Intern" />
           <Employee name="John" role={role}/>
-          <Employee name="Abby"/>
+          <Employee name="Frankie" />
+          <Employee name="Abby"role={role}/>
         </>
         ) : (
           <p>You can't see the list of employees</p>
