@@ -1,4 +1,4 @@
-import EditEmployee from "./EditEmpoyee";
+import EditEmployee from "./EditEmpolyee";
 
 function Employee(props) {
 //remember the keyword "return" when create component
@@ -15,12 +15,7 @@ function Employee(props) {
                             {props.role}
                         </p>
                     </div>
-                    <EditEmployee
-                    id={props.id} 
-                    name={props.name} 
-                    role={props.role}
-                    updateEmployee={props.updateEmployee}
-                    />          
+                    {props.editEmployee}         
                 </div>
         </div>
     )
