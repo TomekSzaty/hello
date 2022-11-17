@@ -5,6 +5,7 @@ import AddEmployee from "./components/AddEmployee";
 import EditEmployee from './components/EditEmpolyee';
 import { useState } from 'react';
 import {v4 as uuidv4} from "uuid";
+import Header from './components/Header';
 
 function App() {
   const [role, setRole] = useState("JavaJDev");
@@ -69,15 +70,10 @@ function App() {
 
   const showEmployees = true; //or false
   return (
-    <div className="App">
+    <div className="App bg-gray-200 min-h-screen">
+      <Header />
       {showEmployees ? (
-        <>
-          < input type="text" 
-            onChange={(e) => {
-            console.log(e.target.value);
-            setRole(e.target.value);
-          }}
-          />  
+        <>           
           <div className='flex flex-wrap justify-center'>          
             {employees.map((employee) => {
                 const editEmployee = (
