@@ -8,7 +8,7 @@ import {v4 as uuidv4} from "uuid";
 import Header from '../components/Header';
 
 function Employees() {
-  //const [role, setRole] = useState("JavaJDev");
+  
   const [employees, setEmployees] = useState([
     {
       id: 1,
@@ -36,7 +36,7 @@ function Employees() {
     },
     {
       id: 5,
-      name: "Anna",
+      name: "Boris",
       role: "Intern",
       img: "https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg"
     },
@@ -70,7 +70,7 @@ function Employees() {
 
   const showEmployees = true; //or false
   return (
-    <div className="App bg-gray-200 min-h-screen">
+    <div className="">
       {showEmployees ? (
         <>           
           <div className='flex flex-wrap justify-center'>          
