@@ -98,7 +98,7 @@ export default function Header(props) {
       )}
     </Disclosure>
     <div className='bg-gray-300'>
-      <div className='max-w-7xl max-auto  min-h-screen p-2'>
+      <div className='max-w-7xl max-auto  min-h-screen p-3'>
       {props.children}
       </div>
     </div>
